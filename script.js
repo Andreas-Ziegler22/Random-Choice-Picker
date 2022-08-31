@@ -46,3 +46,5 @@ function pickRandomTag() {
 function highLightTag(tag) {
   tag.classList.add("highLight");
 }
+
+//sorry I would like to be productive  but today is my first day of corona symptoms

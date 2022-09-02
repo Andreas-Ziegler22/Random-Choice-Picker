@@ -37,10 +37,10 @@ function randomSelect() {
     const randomTag = pickRandomTag();
 
     if (randomTag !== undefined) {
-      highLightTag(randomTag);
+      highlightTag(randomTag);
 
       setTimeout(() => {
-        unHighLightTag(randomTag);
+        unHighlightTag(randomTag);
       }, 100);
     }
   }, 100);
@@ -51,7 +51,7 @@ function randomSelect() {
     setTimeout(() => {
       const randomTag = pickRandomTag();
 
-      highLightTag(randomTag);
+      highlightTag(randomTag);
     }, 100);
   }, times * 100);
 }
@@ -60,12 +60,13 @@ function pickRandomTag() {
   const tags = document.querySelectorAll(".tag");
   return tags[Math.floor(Math.random() * tags.length)];
 }
-function highLightTag(tag) {
-  tag.classList.add("highLight");
+
+function highlightTag(tag) {
+  tag.classList.add("highlight");
 }
 
-function unHighLightTag(tag) {
-  tag.classList.remove("highLight");
+function unHighlightTag(tag) {
+  tag.classList.remove("highlight");
 }
 //sorry I would like to be productive  but today is my first day of corona symptoms
 // second day ;-( I hope tomorrow I will be able to do something

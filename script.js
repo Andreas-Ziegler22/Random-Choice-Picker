@@ -52,6 +52,7 @@ function randomSelect() {
 
     setTimeout(() => {
       const randomTag = pickRandomTag();
+      textarea.placeholder = `nice choice 😎 🤘`;
 
       highlightTag(randomTag);
     }, 100);
